@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:practice_demo_projects/methodChannel/method_channel.dart';
 import 'package:practice_demo_projects/streamController/stream_controller.dart';
 
 void main() {
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const StreamControllerWidget(title: 'Practice'),
+      home: const MethodChannelDemo(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
